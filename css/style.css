@@ -104,7 +104,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/1.jpg') no-repeat center center;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/1.webp') no-repeat center center;
     background-size: cover;
     color: var(--white);
     padding: 180px 0 100px;
@@ -178,7 +178,7 @@ body {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9)), url('../img/2.jpg') no-repeat center center;
+    background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9)), url('../img/2.webp') no-repeat center center;
     background-size: cover;
     color: var(--white);
 }
@@ -301,7 +301,7 @@ body {
 }
 /* About Page Specific Styles */
 .about-hero-section {
-    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/3.jpg') no-repeat center center;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/3.webp') no-repeat center center;
     background-size: cover;
     color: var(--white);
     padding: 180px 0 100px;
@@ -427,7 +427,7 @@ body {
 }
 /* Manifesto Page Specific Styles */
 .manifesto-hero-section {
-    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/4.jpg') no-repeat center center;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/4.webp') no-repeat center center;
     background-size: cover;
     color: var(--white);
     padding: 180px 0 100px;
@@ -561,7 +561,7 @@ body {
 }
 /* Candidates Page Specific Styles */
 .candidates-hero-section {
-    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/5.jpg') no-repeat center center;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/5.webp') no-repeat center center;
     background-size: cover;
     color: var(--white);
     padding: 180px 0 100px;
@@ -688,7 +688,7 @@ body {
 }
 /* Contact Page Specific Styles */
 .contact-hero-section {
-    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/6.jpg') no-repeat center center;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/6.webp') no-repeat center center;
     background-size: cover;
     color: var(--white);
     padding: 180px 0 100px;
@@ -791,7 +791,7 @@ body {
 }
 /* Donation Page Specific Styles */
 .donation-hero-section {
-    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/7.jpg') no-repeat center center;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('../img/7.webp') no-repeat center center;
     background-size: cover;
     color: var(--white);
     padding: 180px 0 100px;
