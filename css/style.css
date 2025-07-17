@@ -11,7 +11,7 @@
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #060606;
+    color: hsl(0, 3%, 94%);
     background-color: var(--light-gray);
     overflow-x: hidden;
 }
@@ -700,7 +700,7 @@ body {
 /* Contact Form */
 #contactForm .form-control, 
 #contactForm .form-select {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(250, 249, 249, 0.041);
     background-color: #008000;
 }
 
@@ -874,7 +874,7 @@ body {
 /* Form Styling */
 #donationForm .form-control, 
 #donationForm .form-select {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(254, 252, 252, 0.1);
     background-color: #008000;
 }
 
@@ -886,7 +886,7 @@ body {
 
 #donationForm .card {
     background-color: #008000;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #f7f4f41a;
 }
 
 /* Responsive Adjustments */
