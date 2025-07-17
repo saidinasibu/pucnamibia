@@ -2,16 +2,16 @@
     --primary-dark: #1a1a2e;
     --secondary-dark: #16213e;
     --gold: #d4af37;
-    --gold-light: #f1e5ac;
+    --gold-light: #008000;
     --gold-dark: #b8860b;
-    --white: #ffffff;
-    --light-gray: #f8f9fa;
+    --white: #008000;
+    --light-gray: #008000;
 }
 
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    color: #060606;
     background-color: var(--light-gray);
     overflow-x: hidden;
 }
@@ -110,7 +110,7 @@ body {
     padding: 180px 0 100px;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: last baseline;
 }
 
 /* Mission Section */
@@ -701,7 +701,7 @@ body {
 #contactForm .form-control, 
 #contactForm .form-select {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #008000;
 }
 
 #contactForm .form-control:focus, 
@@ -875,17 +875,17 @@ body {
 #donationForm .form-control, 
 #donationForm .form-select {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #008000;
 }
 
 #donationForm .form-control:focus, 
 #donationForm .form-select:focus {
     border-color: var(--gold);
-    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(5, 5, 5, 0.25);
 }
 
 #donationForm .card {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #008000;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
