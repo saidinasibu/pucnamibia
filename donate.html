@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Unity Party</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-gold">UNITY</span> PARTY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manifesto.html">Manifesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="candidates.html">Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="donate.html" class="btn btn-gold ms-lg-3">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Donation Hero Section -->
+    <header class="donation-hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4 reveal-up">Support Our <span class="text-gold">Movement</span></h1>
+                    <p class="lead mb-5 reveal-up delay-1">Your contribution helps us build a better future for all citizens.</p>
+                    <div class="d-flex gap-3 reveal-up delay-2">
+                        <a href="#donate-now" class="btn btn-gold btn-lg">Donate Now</a>
+                        <a href="#other-ways" class="btn btn-outline-light btn-lg">Other Ways to Give</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Impact Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center reveal-up">
+                    <h2 class="display-5 fw-bold mb-4">Your Donation <span class="text-gold">Makes a Difference</span></h2>
+                    <p class="lead">See how your contribution helps further our mission</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 reveal-up delay-1">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="impact-icon mb-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Community Organizing</h3>
+                            <p>$50 helps train 10 community volunteers to engage voters in their neighborhoods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal-up delay-2">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="impact-icon mb-4">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Public Awareness</h3>
+                            <p>$100 supports our digital advertising to reach 5,000 citizens with our message.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal-up delay-3">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="impact-icon mb-4">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Candidate Support</h3>
+                            <p>$250 funds campaign materials for one local candidate for a week.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section id="donate-now" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center reveal-up">
+                    <h2 class="display-5 fw-bold mb-4">Make a <span class="text-gold">Donation</span></h2>
+                    <p>Contribute securely online to support our campaign</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 reveal-up delay-1">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <form id="donationForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="donorFirstName" placeholder="First Name" required>
+                                            <label for="donorFirstName">First Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="donorLastName" placeholder="Last Name" required>
+                                            <label for="donorLastName">Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="donorEmail" placeholder="Email Address" required>
+                                            <label for="donorEmail">Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="donorPhone" placeholder="Phone Number">
+                                            <label for="donorPhone">Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="donorAddress" placeholder="Street Address" required>
+                                            <label for="donorAddress">Street Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="donorCity" placeholder="City" required>
+                                            <label for="donorCity">City</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="donorState" required>
+                                                <option value="" selected disabled>Select State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <!-- Add all other states -->
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                            <label for="donorState">State</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="donorZip" placeholder="ZIP Code" required>
+                                            <label for="donorZip">ZIP Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4 class="h5 mb-3">Donation Amount</h4>
+                                        <div class="donation-amounts mb-4">
+                                            <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+                                                <label class="btn btn-outline-gold">
+                                                    <input type="radio" name="donationAmount" value="25"> $25
+                                                </label>
+                                                <label class="btn btn-outline-gold">
+                                                    <input type="radio" name="donationAmount" value="50"> $50
+                                                </label>
+                                                <label class="btn btn-outline-gold">
+                                                    <input type="radio" name="donationAmount" value="100"> $100
+                                                </label>
+                                                <label class="btn btn-outline-gold">
+                                                    <input type="radio" name="donationAmount" value="250"> $250
+                                                </label>
+                                                <label class="btn btn-outline-gold">
+                                                    <input type="radio" name="donationAmount" value="500"> $500
+                                                </label>
+                                                <label class="btn btn-outline-gold">
+                                                    <input type="radio" name="donationAmount" value="custom"> Other
+                                                </label>
+                                            </div>
+                                            <div class="mt-3" id="customAmountContainer" style="display: none;">
+                                                <div class="input-group">
+                                                    <span class="input-group-text">$</span>
+                                                    <input type="number" class="form-control" id="customAmount" placeholder="Enter custom amount">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4 class="h5 mb-3">Payment Information</h4>
+                                        <div class="card p-3 mb-4 bg-white">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="cardNumber" placeholder="Card Number" required>
+                                                <label for="cardNumber">Card Number</label>
+                                            </div>
+                                            <div class="row g-2">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY" required>
+                                                        <label for="cardExpiry">Expiration (MM/YY)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="cardCVC" placeholder="CVC" required>
+                                                        <label for="cardCVC">Security Code</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="recurringDonation">
+                                            <label class="form-check-label" for="recurringDonation">
+                                                Make this a monthly recurring donation
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" id="legalAgreement" required>
+                                            <label class="form-check-label" for="legalAgreement">
+                                                I confirm that this donation is made from my own funds, and not those of another, and is not from a corporation or foreign national.
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-gold btn-lg w-100">Donate Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Give -->
+    <section id="other-ways" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center reveal-up">
+                    <h2 class="display-5 fw-bold mb-4">Other Ways to <span class="text-gold">Give</span></h2>
+                    <p>Additional options for supporting our campaign</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 reveal-up delay-1">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="giving-icon mb-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Mail a Check</h3>
+                            <p>Make checks payable to:</p>
+                            <address class="mb-4">
+                                Unity Party Campaign<br>
+                                P.O. Box 12345<br>
+                                Capital City, CC 10001
+                            </address>
+                            <a href="#" class="btn btn-outline-gold btn-sm">Download Form</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal-up delay-2">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="giving-icon mb-4">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Bank Transfer</h3>
+                            <p>Contact our finance team for wire transfer instructions and account details.</p>
+                            <a href="contact.html" class="btn btn-outline-gold btn-sm">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal-up delay-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="giving-icon mb-4">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Employer Matching</h3>
+                            <p>Many employers match charitable donations. Check if your company will match your contribution.</p>
+                            <a href="#" class="btn btn-outline-gold btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal-up delay-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="giving-icon mb-4">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Fundraise</h3>
+                            <p>Create your own fundraising page to collect donations from your network on our behalf.</p>
+                            <a href="#" class="btn btn-outline-gold btn-sm">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center reveal-up">
+                    <h2 class="display-5 fw-bold mb-4">Our Commitment to <span class="text-gold">Transparency</span></h2>
+                    <p class="lead mb-5">We believe in full disclosure of our funding sources and how we use donations.</p>
+                    <div class="row g-4">
+                        <div class="col-md-4 reveal-up delay-1">
+                            <div class="transparency-item">
+                                <div class="transparency-icon mb-3">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3 class="h4 mb-3">Legal Compliance</h3>
+                                <p>All donations are processed in strict compliance with campaign finance laws.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 reveal-up delay-2">
+                            <div class="transparency-item">
+                                <div class="transparency-icon mb-3">
+                                    <i class="fas fa-file-invoice-dollar"></i>
+                                </div>
+                                <h3 class="h4 mb-3">Public Records</h3>
+                                <p>As required by law, we report all contributions to the appropriate authorities.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 reveal-up delay-3">
+                            <div class="transparency-item">
+                                <div class="transparency-icon mb-3">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h3 class="h4 mb-3">Secure Processing</h3>
+                                <p>Your payment information is protected with industry-standard encryption.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 reveal-up delay-4">
+                        <a href="#" class="btn btn-gold">View Our Financial Reports</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-4"><span class="text-gold">UNITY</span> PARTY</h3>
+                    <p>Committed to justice, prosperity, and unity for all citizens. Join us in building a better future together.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="manifesto.html" class="text-white">Manifesto</a></li>
+                        <li class="mb-2"><a href="candidates.html" class="text-white">Candidates</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="h5 mb-4">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-gold"></i> 123 Unity Avenue, Capital City</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2 text-gold"></i> +1 234 567 890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2 text-gold"></i> info@unityparty.org</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="h5 mb-4">Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and announcements.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-gold" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2025 Unity Party. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white me-3">Privacy Policy</a>
+                        <a href="#" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script>
+        // Show custom amount field when "Other" is selected
+        document.querySelectorAll('input[name="donationAmount"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                const customAmountContainer = document.getElementById('customAmountContainer');
+                if (this.value === 'custom') {
+                    customAmountContainer.style.display = 'block';
+                } else {
+                    customAmountContainer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Unity Party</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-gold">UNITY</span> PARTY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manifesto.html">Manifesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="candidates.html">Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="donate.html" class="btn btn-gold ms-lg-3">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <header class="contact-hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4 reveal-up">Get In <span class="text-gold">Touch</span></h1>
+                    <p class="lead mb-5 reveal-up delay-1">We'd love to hear from you. Reach out with questions, ideas, or to get involved.</p>
+                    <div class="d-flex gap-3 reveal-up delay-2">
+                        <a href="#contact-form" class="btn btn-gold btn-lg">Send Message</a>
+                        <a href="#locations" class="btn btn-outline-light btn-lg">Our Offices</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center reveal-up">
+                    <h2 class="display-5 fw-bold mb-4">Send Us a <span class="text-gold">Message</span></h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 reveal-up delay-1">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                            <label for="firstName">First Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                            <label for="lastName">Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                                            <label for="email">Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                            <label for="phone">Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="subject" required>
+                                                <option value="" selected disabled>Select a subject</option>
+                                                <option value="general">General Inquiry</option>
+                                                <option value="volunteer">Volunteer Opportunities</option>
+                                                <option value="donation">Donation Questions</option>
+                                                <option value="press">Press Inquiry</option>
+                                                <option value="event">Event Information</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                            <label for="message">Your Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter" checked>
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-gold btn-lg w-100">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center reveal-up">
+                    <h2 class="display-5 fw-bold mb-4">Other Ways to <span class="text-gold">Connect</span></h2>
+                    <p>We're available through multiple channels to serve you better.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 reveal-up delay-1">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="contact-icon mb-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Phone</h3>
+                            <p class="mb-2"><strong>Main Office:</strong></p>
+                            <p class="mb-4">+1 (234) 567-8900</p>
+                            <p class="mb-2"><strong>Press Inquiries:</strong></p>
+                            <p>+1 (234) 567-8901</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal-up delay-2">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="contact-icon mb-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Email</h3>
+                            <p class="mb-2"><strong>General Inquiries:</strong></p>
+                            <p class="mb-4">info@unityparty.org</p>
+                            <p class="mb-2"><strong>Volunteers:</strong></p>
+                            <p>volunteer@unityparty.org</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal-up delay-3">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="contact-icon mb-4">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Social Media</h3>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <p class="mt-4 mb-0">Message us on any platform</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center reveal-up">
+                    <h2 class="display-5 fw-bold mb-4">Our <span class="text-gold">Offices</span></h2>
+                    <p>Visit us at one of our regional offices across the country.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 reveal-up delay-1">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-gold text-dark">
+                            <h3 class="h4 mb-0">National Headquarters</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="location-map mb-3 mb-md-0">
+                                        <img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Map Location">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <address>
+                                        <strong>Unity Party HQ</strong><br>
+                                        123 Unity Avenue<br>
+                                        Capital City, CC 10001<br>
+                                        United States
+                                    </address>
+                                    <hr>
+                                    <p><strong>Hours:</strong></p>
+                                    <p>Monday-Friday: 9am-5pm<br>
+                                    Saturday: 10am-2pm<br>
+                                    Sunday: Closed</p>
+                                    <a href="#" class="btn btn-outline-gold btn-sm">Get Directions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-up delay-2">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-gold text-dark">
+                            <h3 class="h4 mb-0">Regional Offices</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion" id="regionalOffices">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#northOffice">
+                                            Northern Region Office
+                                        </button>
+                                    </h2>
+                                    <div id="northOffice" class="accordion-collapse collapse show" data-bs-parent="#regionalOffices">
+                                        <div class="accordion-body">
+                                            <address>
+                                                456 Northern Blvd<br>
+                                                Metro City, MC 20002<br>
+                                                United States
+                                            </address>
+                                            <p><strong>Phone:</strong> +1 (234) 567-8910</p>
+                                            <a href="#" class="btn btn-outline-gold btn-sm">Get Directions</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eastOffice">
+                                            Eastern Region Office
+                                        </button>
+                                    </h2>
+                                    <div id="eastOffice" class="accordion-collapse collapse" data-bs-parent="#regionalOffices">
+                                        <div class="accordion-body">
+                                            <address>
+                                                789 Eastern Avenue<br>
+                                                Coastal City, CC 30003<br>
+                                                United States
+                                            </address>
+                                            <p><strong>Phone:</strong> +1 (234) 567-8911</p>
+                                            <a href="#" class="btn btn-outline-gold btn-sm">Get Directions</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#westOffice">
+                                            Western Region Office
+                                        </button>
+                                    </h2>
+                                    <div id="westOffice" class="accordion-collapse collapse" data-bs-parent="#regionalOffices">
+                                        <div class="accordion-body">
+                                            <address>
+                                                321 Western Highway<br>
+                                                Valley City, VC 40004<br>
+                                                United States
+                                            </address>
+                                            <p><strong>Phone:</strong> +1 (234) 567-8912</p>
+                                            <a href="#" class="btn btn-outline-gold btn-sm">Get Directions</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#southOffice">
+                                            Southern Region Office
+                                        </button>
+                                    </h2>
+                                    <div id="southOffice" class="accordion-collapse collapse" data-bs-parent="#regionalOffices">
+                                        <div class="accordion-body">
+                                            <address>
+                                                654 Southern Parkway<br>
+                                                Riverside City, RC 50005<br>
+                                                United States
+                                            </address>
+                                            <p><strong>Phone:</strong> +1 (234) 567-8913</p>
+                                            <a href="#" class="btn btn-outline-gold btn-sm">Get Directions</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer CTA Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center reveal-up">
+                    <h2 class="display-5 fw-bold mb-4">Want to <span class="text-gold">Volunteer</span>?</h2>
+                    <p class="lead mb-5">Join our team of dedicated volunteers working to make a difference in communities across the nation.</p>
+                    <div class="d-flex gap-3 justify-content-center reveal-up delay-1">
+                        <a href="#" class="btn btn-gold btn-lg">Sign Up to Volunteer</a>
+                        <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-4"><span class="text-gold">UNITY</span> PARTY</h3>
+                    <p>Committed to justice, prosperity, and unity for all citizens. Join us in building a better future together.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="manifesto.html" class="text-white">Manifesto</a></li>
+                        <li class="mb-2"><a href="candidates.html" class="text-white">Candidates</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="h5 mb-4">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-gold"></i> 123 Unity Avenue, Capital City</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2 text-gold"></i> +1 234 567 890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2 text-gold"></i> info@unityparty.org</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="h5 mb-4">Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and announcements.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-gold" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2025 Unity Party. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white me-3">Privacy Policy</a>
+                        <a href="#" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
