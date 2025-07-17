@@ -11,7 +11,7 @@
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: hsl(0, 3%, 94%);
+    color: hwb(0 3% 97%);
     background-color: var(--light-gray);
     overflow-x: hidden;
 }
@@ -134,7 +134,7 @@ body {
 .icon-box {
     width: 80px;
     height: 80px;
-    background-color: rgba(212, 175, 55, 0.1);
+    background-color: hsla(0, 1%, 31%, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -522,7 +522,7 @@ body {
 
 .timeline-content {
     padding: 20px;
-    background: rgba(212, 175, 55, 0.1);
+    background: hsla(60, 1%, 83%, 0.102);
     border-radius: 8px;
     margin-top: 20px;
 }
